@@ -1,31 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container-fluid m-0">
+      <div class="row">
+        <div class="col p-0">
+          <the-navigation-bar />
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col">
+            <router-view />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-0">
+          <the-footer />
+        </div>
+      </div>
     </div>
-    <router-view />
   </div>
 </template>
 
+<script>
+export default {
+  name: "app",
+  components: {
+    TheNavigationBar: () => import("./components/TheNavigationBar.vue"),
+    TheFooter: () => import("./components/TheFooter.vue")
+  }
+};
+</script>
+
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.content {
+  margin-top: 95.75px;
+  margin-bottom: 68.8px;
 }
 </style>
