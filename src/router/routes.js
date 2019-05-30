@@ -9,32 +9,36 @@ import {
 
 export default [
   {
-    component: () => import("./../views/Home.vue"),
+    component: () => import(/* webpackPrefetch: true */ "./../views/Home.vue"),
     name: "home",
     path: HOME_PATH
   },
   {
-    component: () => import("./../views/About.vue"),
+    component: () => import(/* webpackPrefetch: true */ "./../views/About.vue"),
     name: "about",
     path: ABOUT_PATH
   },
   {
-    component: () => import("./../views/Events.vue"),
+    component: () =>
+      import(/* webpackPrefetch: true */ "./../views/Events.vue"),
     name: "events",
     path: EVENTS_PATH
   },
   {
-    component: () => import("./../views/Research.vue"),
+    component: () =>
+      import(/* webpackPrefetch: true */ "./../views/Research.vue"),
     name: "research",
     path: RESEARCH_PATH
   },
   {
-    component: () => import("./../views/Education.vue"),
+    component: () =>
+      import(/* webpackPrefetch: true */ "./../views/Education.vue"),
     name: "education",
     path: EDUCATION_PATH
   },
   {
-    component: () => import("./../views/Contact.vue"),
+    component: () =>
+      import(/* webpackPrefetch: true */ "./../views/Contact.vue"),
     name: "contact",
     path: CONTACT_PATH
   }

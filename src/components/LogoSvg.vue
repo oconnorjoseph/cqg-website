@@ -138,6 +138,12 @@ export default {
 };
 </script>
 
-<style>
-@import url(//db.onlinewebfonts.com/c/dee436f274c410c23fc3de43367ef1ae?family=JannaLT-Regular);
+<style scoped>
+@font-face {
+  font-family: "JannaLT-Regular";
+  src: url("../assets/fonts/janna.woff") format("woff"),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../assets/fonts/janna.woff2") format("woff2"),
+    url("../assets/fonts/janna.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 </style>

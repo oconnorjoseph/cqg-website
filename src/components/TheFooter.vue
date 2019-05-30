@@ -22,8 +22,8 @@
           >
         </div>
         <div class="col">
-          <a class="text-light" href="mailto:columbia.quant.group@gmail.com"
-            >columbia.quant.group@gmail.com</a
+          <a class="text-light" href="mailto:columbia.quant.group@columbia.edu"
+            >columbia.quant.group@columbia.edu</a
           >
         </div>
       </div>

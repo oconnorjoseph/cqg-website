@@ -1,51 +1,16 @@
 <template>
   <div :id="this.$options.name">
     <div class="row m-2">
-      <header class="mx-auto text-center m-5">
-        <h1 class="display-4">Executive Board</h1>
+      <header class="mx-auto text-center m-4">
+        <div class="pb-2">
+          <h1 class="scale-display-4">Executive Board</h1>
+        </div>
         <h5 class="font-weight-light">
-          Let's say something that doesn't directly copy CFIG.
+          We strive to facilitate a community of quantitative thinking.
         </h5>
       </header>
     </div>
-    <div class="row m-2">
-      <div class="col-sm-6 col-lg-3 p-2">
-        <person-card
-          headshotUrl="/img/afrogleb.jpg"
-          name="Gleb Vizitiv SEAS '20"
-          role="Co-President"
-          description="Junior studying Computer Science and Physics who is working at Morgan Stanley."
-          email="gleb.vizitiv@columbia.edu"
-        />
-      </div>
-      <div class="col-sm-6 col-lg-3 p-2">
-        <person-card
-          headshotUrl="/img/ojw2140_headshot.jpg"
-          name="Oliver Jin Wang CC '20"
-          role="Co-President"
-          description="Junior studying Physics and Statistic who is working at PJT Partners."
-          email="ojw2140@columbia.edu"
-        />
-      </div>
-      <div class="col-sm-6 col-lg-3 p-2">
-        <person-card
-          headshotUrl="/img/rcr2142_headshot.jpeg"
-          name="Rodolfo Costa Raimundo SEAS '21"
-          role="Vice President"
-          description="Sophomore studying Mathematics and CS who is working at Morgan Stanley."
-          email="rcr2142@columbia.edu"
-        />
-      </div>
-      <div class="col-sm-6 col-lg-3 p-2">
-        <person-card
-          headshotUrl="/img/nl2605_headshot.jpg"
-          name="Nicolae Lari SEAS '21"
-          role="Vice President"
-          description="Sophomore studying Computer Science and Statistics who is working at Morgan Stanley."
-          email="nl2605@columbia.edu"
-        />
-      </div>
-    </div>
+    <member-board :group="0" />
   </div>
 </template>
 
@@ -53,7 +18,8 @@
 export default {
   name: "About",
   components: {
-    PersonCard: () => import("../components/PersonCard.vue")
+    MemberBoard: () =>
+      import(/* webpackPreload: true */ "../components/MemberBoard.vue")
   }
 };
 </script>

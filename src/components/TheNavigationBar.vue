@@ -67,7 +67,7 @@ import {
 export default {
   name: "TheNavigationBar",
   components: {
-    LogoSvg: () => import("./LogoSvg.vue")
+    LogoSvg: () => import(/* webpackPreload: true */ "./LogoSvg.vue")
   },
 
   data: function() {

@@ -10,8 +10,10 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "core-js": "^2.6.5",
+    "firebase": "^6.1.0",
     "gsap": "^2.1.2",
     "jquery": "^3.4.0",
+    "nodemailer": "^6.2.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
@@ -27,6 +29,8 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "lint-staged": "^8.1.5",
+    "style-loader": "^0.23.1",
+    "sw-precache-webpack-plugin": "^0.11.5",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {

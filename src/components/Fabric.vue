@@ -144,7 +144,7 @@ function step() {
 
 function dispose(lastStep) {
   var container = document.getElementById("container");
-  while (container.firstChild) {
+  while (container && container.firstChild) {
     container.removeChild(container.firstChild);
   }
   cancelAnimationFrame(lastStep);

@@ -3,8 +3,8 @@
     <div class="card-body">
       <h5 class="card-title">Email</h5>
       <p class="card-text">
-        <a href="mailto:columbia.quant.group@gmail.com"
-          >columbia.quant.group@gmail.com</a
+        <a href="mailto:columbia.quant.group@columbia.edu"
+          >columbia.quant.group@columbia.edu</a
         >
       </p>
       <br />

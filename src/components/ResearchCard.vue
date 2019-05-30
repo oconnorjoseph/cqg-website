@@ -1,8 +1,8 @@
 <template>
   <div :id="this.$options.name" class="card p-2">
     <div class="card-body">
-      <h5 class="card-title text-dark">{{ title }}</h5>
-      <p class="card-text">{{ description }}</p>
+      <h5 class="card-title text-dark">{{ project.title }}</h5>
+      <p class="card-text">{{ project.description }}</p>
     </div>
   </div>
 </template>
@@ -11,17 +11,9 @@
 export default {
   name: "ResearchCard",
   props: {
-    title: {
-      type: String,
+    project: {
+      type: Object,
       required: true
-    },
-    description: {
-      type: String,
-      required: true
-    },
-    members: {
-      type: String,
-      required: false
     }
   }
 };

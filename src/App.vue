@@ -26,8 +26,10 @@
 export default {
   name: "app",
   components: {
-    TheNavigationBar: () => import("./components/TheNavigationBar.vue"),
-    TheFooter: () => import("./components/TheFooter.vue")
+    TheNavigationBar: () =>
+      import(/* webpackPreload: true */ "./components/TheNavigationBar.vue"),
+    TheFooter: () =>
+      import(/* webpackPreload: true */ "./components/TheFooter.vue")
   }
 };
 </script>
