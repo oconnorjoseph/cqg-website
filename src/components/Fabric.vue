@@ -23,7 +23,10 @@ var ROWS = 15,
   THICKNESS = Math.pow(2500, 2),
   SPACING = 50,
   MARGIN = 0,
-  COLOR = 0,
+  R = 0,
+  G = 51,
+  B = 102,
+  A = 255,
   DRAG = 0.2,
   EASE = 0.25,
   /*
@@ -132,8 +135,11 @@ function step() {
 
     for (i = 0; i < NUM_PARTICLES; i++) {
       p = list[i];
-      (b[(n = (~~p.x + ~~p.y * w) * 4)] = b[n + 1] = b[n + 2] = COLOR),
-        (b[n + 3] = 255);
+      n = (~~p.x + ~~p.y * w) * 4;
+      b[n] = R;
+      b[n + 1] = G;
+      b[n + 2] = B;
+      b[n + 3] = A;
     }
 
     ctx.putImageData(a, 0, 0);

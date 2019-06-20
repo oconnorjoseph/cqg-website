@@ -4,7 +4,8 @@ import {
   EVENTS_PATH,
   RESEARCH_PATH,
   EDUCATION_PATH,
-  CONTACT_PATH
+  CONTACT_PATH,
+  DATATHONS_PATH
 } from "./paths";
 
 export default [
@@ -41,5 +42,11 @@ export default [
       import(/* webpackPrefetch: true */ "./../views/Contact.vue"),
     name: "contact",
     path: CONTACT_PATH
+  },
+  {
+    component: () =>
+      import(/* webpackPrefetch: true */ "./../views/Datathons.vue"),
+    name: "datathons",
+    path: DATATHONS_PATH
   }
 ];

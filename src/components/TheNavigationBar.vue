@@ -33,6 +33,12 @@
             >Events</a
           >
         </li>
+        <!-- Link to Datathons 'page' -->
+        <!-- <li class="nav-item">
+          <router-link class="nav-link" :to="datathonsPath"
+            >Datathons</router-link
+          >
+        </li> -->
         <!-- Link to Research 'page' -->
         <li class="nav-item">
           <router-link class="nav-link" :to="researchPath"
@@ -61,7 +67,8 @@ import {
   EVENTS_PATH,
   RESEARCH_PATH,
   EDUCATION_PATH,
-  CONTACT_PATH
+  CONTACT_PATH,
+  DATATHONS_PATH
 } from "./../router/paths.js";
 
 export default {
@@ -77,7 +84,8 @@ export default {
       eventsPath: EVENTS_PATH,
       researchPath: RESEARCH_PATH,
       educationPath: EDUCATION_PATH,
-      contactPath: CONTACT_PATH
+      contactPath: CONTACT_PATH,
+      datathonsPath: DATATHONS_PATH
     };
   }
 };
