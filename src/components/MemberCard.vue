@@ -7,7 +7,7 @@
     />
     <div class="card-body">
       <div class="pb-2">
-        <h5 class="card-title">{{ fullName }}</h5>
+        <h5 class="card-title text-primary">{{ fullName }}</h5>
         <!-- <h5 class="card-title">{{ schoolYear }}</h5> -->
       </div>
       <p class="card-text">{{ role }}</p>

@@ -1,7 +1,7 @@
 <template>
   <div :id="this.$options.name" class="card p-2">
     <div class="card-body">
-      <h5 class="card-title text-dark">{{ project.title }}</h5>
+      <h5 class="card-title text-primary">{{ project.title }}</h5>
       <p class="card-text">{{ project.description }}</p>
     </div>
   </div>
@@ -19,4 +19,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.card {
+  height: 100%;
+}
+</style>

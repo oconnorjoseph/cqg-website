@@ -5,7 +5,7 @@
   >
     <!-- Link to Home 'page' -->
     <router-link class="navbar-brand" :to="homePath">
-      <logo-svg width="150" height="75" color="000" />
+      <logo-svg width="150" height="75" />
     </router-link>
     <button
       class="navbar-toggler"
