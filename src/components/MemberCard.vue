@@ -126,6 +126,7 @@ export default {
 <style scoped>
 img {
   max-width: 50%;
+  flex-shrink: 0;
 }
 .card {
   border: none;
