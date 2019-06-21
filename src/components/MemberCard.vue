@@ -127,6 +127,7 @@ export default {
 img {
   max-width: 50%;
   flex-shrink: 0;
+  width: 50%;
 }
 .card {
   border: none;
