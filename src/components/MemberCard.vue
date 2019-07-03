@@ -124,10 +124,9 @@ export default {
 </script>
 
 <style scoped>
-img {
-  max-width: 50%;
-  flex-shrink: 0;
+.card-img-top {
   width: 50%;
+  flex-shrink: 0;
 }
 .card {
   border: none;
