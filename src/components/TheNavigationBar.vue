@@ -33,12 +33,12 @@
             >Events</a
           >
         </li>
-        <!-- Link to Datathons 'page' -->
+        <!-- Link to Datathons 'page'
         <li class="nav-item">
           <router-link class="nav-link" :to="datathonsPath"
             >Datathons</router-link
           >
-        </li>
+        </li> -->
         <!-- Link to Research 'page' -->
         <li class="nav-item">
           <router-link class="nav-link" :to="researchPath"
