@@ -66,7 +66,7 @@ export function unsubscribeBoard(groupField) {
 }
 
 /**
- * Populates the given array with all of the education-board-member objects & automattically updates the entire array every
+ * Populates the given array with all of the education-board-member objects & automatically updates the entire array every
  * time the education board changes (a member is added or removed)
  *
  * @param {*} firestore The cqg-website Firestore object
@@ -77,7 +77,7 @@ export function subscribeEducationBoard(firestore, educationBoard) {
 }
 
 /**
- * Populates the given array with all of the research-board-member objects & automattically updates the entire array every
+ * Populates the given array with all of the research-board-member objects & automatically updates the entire array every
  * time the research board changes (a member is added or removed)
  *
  * @param {*} firestore The cqg-website Firestore object

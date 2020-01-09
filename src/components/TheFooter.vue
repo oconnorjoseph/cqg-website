@@ -1,7 +1,7 @@
 <template>
   <footer :id="this.$options.name" class="fixed-bottom">
     <div class="container-fluid bg-dark">
-      <div class="row py-4 text-center">
+      <div class="row py-3 text-center">
         <div class="col">
           <a
             class="text-light"

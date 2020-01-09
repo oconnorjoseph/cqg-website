@@ -1,7 +1,7 @@
 <template>
   <nav
     :id="this.$options.name"
-    class="navbar fixed-top navbar-expand-sm navbar-light bg-light py-1"
+    class="navbar fixed-top navbar-expand-md navbar-light bg-light py-1"
   >
     <!-- Link to Home 'page' -->
     <router-link class="navbar-brand" :to="homePath">
@@ -33,8 +33,8 @@
             >Events</a
           >
         </li>
-        <!-- Link to Datathons 'page' -->
-        <!-- <li class="nav-item">
+        <!-- Link to Datathons 'page'
+        <li class="nav-item">
           <router-link class="nav-link" :to="datathonsPath"
             >Datathons</router-link
           >
