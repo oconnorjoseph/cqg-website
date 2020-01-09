@@ -1,7 +1,7 @@
 const { GenerateSW } = require("workbox-webpack-plugin");
 
 module.exports = {
-  publicPath: "cu/cqg/",
+  publicPath: "/cu/cqg/",
   pwa: {
     name: "Columbia Quant Group",
     manifestPath: "manifest.json",
