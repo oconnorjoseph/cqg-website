@@ -18,7 +18,7 @@
       </div>
       <div class="row">
         <div class="col p-2">
-          <p class="card-text">{{ datathon.description }}</p>
+          <p class="card-text" v-html="datathon.description" />
         </div>
       </div>
       <hr />
