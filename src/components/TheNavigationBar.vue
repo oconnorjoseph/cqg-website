@@ -23,7 +23,7 @@
       <ul class="navbar-nav ml-auto">
         <!-- Link to About 'page' -->
         <li class="nav-item">
-          <router-link class="nav-link" :to="aboutPath">Our Team</router-link>
+          <router-link class="nav-link" :to="aboutPath">About Us</router-link>
         </li>
         <!-- Link to Events 'page' -->
         <li class="nav-item">
@@ -41,9 +41,13 @@
         </li> -->
         <!-- Link to Research 'page' -->
         <li class="nav-item">
-          <router-link class="nav-link" :to="researchPath"
-            >Research</router-link
-          >
+          <router-link class="nav-link" :to="researchPath">
+            Research
+            <i
+              v-if="hasInternalDatathonAlert"
+              class="fa fa-exclamation-circle text-danger"
+            />
+          </router-link>
         </li>
         <!-- Link to Education 'page' -->
         <li class="nav-item">
@@ -70,13 +74,13 @@ import {
   CONTACT_PATH,
   DATATHONS_PATH
 } from "./../router/paths.js";
+import { mapGetters } from "vuex";
 
 export default {
   name: "TheNavigationBar",
   components: {
-    LogoSvg: () => import(/* webpackPreload: true */ "./LogoSvg.vue")
+    LogoSvg: () => import(/* webpackPreload: true */ "./svg/LogoSvg.vue")
   },
-
   data: function() {
     return {
       homePath: HOME_PATH,
@@ -87,6 +91,9 @@ export default {
       contactPath: CONTACT_PATH,
       datathonsPath: DATATHONS_PATH
     };
+  },
+  computed: {
+    ...mapGetters(["hasInternalDatathonAlert"])
   }
 };
 </script>
