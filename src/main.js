@@ -15,3 +15,4 @@ new Vue({
 
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./assets/css/bootstrap.css";
+import "font-awesome/css/font-awesome.css";
