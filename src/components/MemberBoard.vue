@@ -3,7 +3,8 @@
     <div
       v-for="member in board"
       :key="member.uni"
-      class="col-sm-6 col-lg-3 p-2"
+      class="p-2 mx-auto"
+      style="max-width: 300px;"
     >
       <member-card :member="member" :group="group" />
     </div>

@@ -1,18 +1,23 @@
 <template>
   <div :id="this.$options.name">
     <div class="row m-2">
-      <div class="mx-auto text-center m-5">
-        <h1 class="scale-display-4">CQG Academy</h1>
-        <p>
+      <header class="mx-auto text-center header-width slide-in-out">
+        <div class="pb-0 pt-2">
+          <logo-education-svg class="logo-view" />
+        </div>
+        <h3 class="font-weight-light text-secondary pb-4">
+          Education
+        </h3>
+        <h5 class="font-weight-light">
           We provide our members with an extensive collection of resources and
           initiatives to develop their skills and understanding of quantitative
           finance.
-        </p>
-      </div>
+        </h5>
+      </header>
     </div>
-    <education-initiatives />
+    <education-initiatives class="mt-4" />
     <div class="row m-2">
-      <h1 class="mx-auto text-center m-5">Meet The Education Team</h1>
+      <h1 class="mx-auto text-center scale-display-4 m-5">Education Board</h1>
     </div>
     <member-board :group="2" />
   </div>
@@ -22,6 +27,8 @@
 export default {
   name: "Education",
   components: {
+    LogoEducationSvg: () =>
+      import(/* webpackPreload: true */ "../components/svg/LogoEducationSvg.vue"),
     EducationInitiatives: () =>
       import(/* webpackPreload: true */ "../components/EducationInitiatives.vue"),
     MemberBoard: () =>

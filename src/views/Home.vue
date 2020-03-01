@@ -12,12 +12,10 @@
     </div>
     <fabric />
     <div class="row p-5">
-      <div class="col text-center">
-        <a
-          href="https://www.facebook.com/columbiaquantgroup/"
-          class="btn btn-outline-primary"
-          >Attend our meetings</a
-        >
+      <div class="col-auto text-center mx-auto">
+        <a href="https://www.facebook.com/columbiaquantgroup/"
+          ><button class="rot">Attend upcoming events</button>
+        </a>
       </div>
     </div>
     <div class="row p-5"></div>

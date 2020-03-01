@@ -1,5 +1,5 @@
 <template>
-  <div :id="this.$options.name" class="card text-center p-2">
+  <div :id="this.$options.name" class="card text-center p-2 grow">
     <img
       class="card-img-top rounded-circle mx-auto"
       :src="headshotUrl"
