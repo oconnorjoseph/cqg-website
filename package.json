@@ -13,7 +13,7 @@
     "core-js": "^2.6.5",
     "current-script-polyfill": "^1.0.0",
     "firebase": "^6.1.0",
-    "gsap": "^2.1.2",
+    "gsap": "^3.6.0",
     "jquery": "^3.4.0",
     "nodemailer": "^6.2.1",
     "popper.js": "^1.16.0",
